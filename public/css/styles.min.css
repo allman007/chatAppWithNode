@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+input {
+  font-size: 14px;
+}
+body {
+  line-height: 1.4;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  margin-bottom: 16px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #777;
+}
+input {
+  border: 1px solid #eee;
+  padding: 12px;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7c5cbf;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #6b47b8;
+}
+button:disabled {
+  cursor: default;
+  background: #7c5cbf94;
+}
+#note {
+  background-color: #333744;
+  color: white;
+  width: 100vw;
+  padding: 12px;
+}
+#note > h2 {
+  text-align: center;
+  /* margin-top: 9px; */
+  align-items: center;
+}
+#note > h5 {
+  align-items: center;
+  text-align: center;
+}
+.centered-form {
+  background: #333744;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-form__box {
+  box-shadow: 0 0 17px 1px #1d1f26;
+  background: #f7f7fa;
+  padding: 24px;
+  width: 300px;
+  height: 350px;
+  margin-top: -95px;
+}
+.centered-form button {
+  width: 100%;
+}
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 12px;
+  border-color: #1d1f26;
+}
+.centered-form label {
+  font-weight: bold;
+}
+.chat {
+  display: flex;
+}
+.chat__sidebar {
+  height: 100vh;
+  color: #fff;
+  background: #333744;
+  width: 225px;
+  overflow-y: scroll;
+}
+.chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+.chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0;
+  overflow-y: scroll;
+}
+.message {
+  margin-bottom: 16px;
+}
+.message__name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.message__meta {
+  color: #777;
+  font-size: 14px;
+}
+.message a {
+  color: #0070cc;
+}
+.compose {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 16px;
+  padding: 24px;
+}
+.compose form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+.compose input {
+  border: 2px solid rgba(128, 128, 128, 0.514);
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.compose button {
+  font-size: 14px;
+}
+.room-title {
+  font-weight: 400;
+  font-size: 22px;
+  background: #2c2f3a;
+  padding: 24px;
+}
+.list-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 12px 24px 0;
+}
+.users {
+  list-style-type: none;
+  font-weight: 300;
+  padding: 12px 24px 0;
+}
+.usersname {
+  padding-bottom: 15px;
+}
+
+.footer h4 {
+  position: absolute;
+  background-color: #eee;
+  bottom: -15px;
+  right: 35vw;
+  padding: 11px;
+}
+
+@media (max-width: 900px) {
+  .footer h4 {
+    background-color: #eee;
+    bottom: 4vw;
+    right: 35vw;
+    padding: 11px;
+    margin-right: -11%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer h4 {
+    background-color: #eee;
+    left: 45px;
+    max-width: 100%;
+    bottom: -16px;
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .compose {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 20px;
+  }
+  .compose form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+  .compose input {
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 10px 0 0;
+    flex-grow: 1;
+  }
+  .compose button {
+    font-size: 9px;
+  }
+
+  .chat__sidebar {
+    height: 100vh;
+    color: #fff;
+    background: #333744;
+    width: 115px;
+    overflow-y: scroll;
+  }
+  .chat__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  .chat__messages {
+    flex-grow: 1;
+    padding: 24px 24px 0;
+    overflow-y: scroll;
+  }
+  .message {
+    margin-bottom: 14px;
+  }
+  .message {
+    margin-bottom: 16px;
+  }
+  .message__name {
+    font-weight: 300;
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  .message__meta {
+    color: #777;
+    font-size: 9px;
+  }
+  .message a {
+    color: #0070cc;
+  }
+  .room-title {
+    font-weight: 200;
+    font-size: 15px;
+    background: #2c2f3a;
+    padding: 14px;
+  }
+  .list-title {
+    font-weight: 250;
+    font-size: 14px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0;
+  }
+  .usersname {
+    font-size: 12px;
+
+    align-items: center;
+  }
+}
